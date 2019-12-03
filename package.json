@@ -7,6 +7,7 @@
   "dependencies": {
     "analytics": "^0.3.0",
     "analytics-plugin-google-tag-manager": "^0.1.5",
+    "analytics-plugin-segment": "^0.2.3",
     "gatsby": "^2.18.6",
     "gatsby-image": "^2.2.10",
     "gatsby-plugin-analytics": "^0.2.0",

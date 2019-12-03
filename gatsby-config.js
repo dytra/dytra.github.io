@@ -41,6 +41,12 @@ module.exports = {
         trackingId: "UA-86408712-3",
       },
     },
+    {
+      resolve: "gatsby-plugin-segment-analytics",
+      options: {
+        writeKey: "K9qwX6k1cnwWihUUNz5Mtk9ZD8HEqB1T",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
