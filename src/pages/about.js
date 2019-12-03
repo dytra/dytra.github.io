@@ -1,7 +1,9 @@
 import React from "react";
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 export default () => (
   <Layout>
+    <SEO title="About" />
     <h1>About me</h1>
     <p>It seems you really wanna know me, How sweet!</p>
     <p>My full name is Widhi Putra Nugraha</p>
