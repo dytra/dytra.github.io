@@ -11,5 +11,6 @@ export default () => (
     </p>
     <p><a href="https://www.instagram.com/dytra.io/" target="_blank">Instagram</a></p>
     <p><a href="https://twitter.com/dytra_io" target="_blank">Twitter</a></p>
+    <p><a href="https://github.com/dytra" target="_blank">Github</a></p>
   </Layout>
 )
