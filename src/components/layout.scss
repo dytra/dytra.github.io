@@ -1,0 +1,28 @@
+@import "./../styles/utils.scss";
+@import "./../styles/components.scss";
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+}
+
+main {
+  padding-top:2.5em;
+}
+
+@media (max-width: 767px) {
+  main {
+    padding-top:2.5em;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    padding-top:1em;
+    // display:none;
+  }
+}

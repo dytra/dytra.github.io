@@ -1,0 +1,28 @@
+@import "../../styles/colors.scss";
+
+header {
+  padding: 1.5em 0;
+  box-shadow: 0px 3px 4px #70707019;
+  a {
+    text-decoration: none !important;
+  }
+
+  div#header-container {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    
+    ul {
+      margin-left: auto;
+      li {
+        display: inline-block;
+        margin-right: 1em;
+        margin-left: 1em;
+        a.menu-active {
+          color:$secondary;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
