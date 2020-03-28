@@ -5,11 +5,11 @@ import "./layout.scss";
 import "./../styles/utils.scss";
 import "./../styles/resets.scss";
 export default ({ children }) => (
-  <div>
+  <React.Fragment>
     <Header />
     <main className="container">
       {children}
     </main>
 
-  </div>
+  </React.Fragment>
 )
