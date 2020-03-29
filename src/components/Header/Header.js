@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => {
     setShowMenu(!showMenu);
   }
   return (<header>
-    <div id="header-container">
+    <div id="header-container" className="container">
       <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
         <h3 style={{ display: `inline` }}>dytra's note</h3>
       </Link>
