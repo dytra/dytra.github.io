@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => {
   return (<header>
     <div id="header-container" className="container">
       <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-        <h3 style={{ display: `inline` }}>dytra's note</h3>
+        <h3 style={{ display: `inline` }}>dytra</h3>
       </Link>
       <ul className={showMenu ? "force-show" : ""}>
         <ListLink to="/">Home</ListLink>
