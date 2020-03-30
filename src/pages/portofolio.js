@@ -11,7 +11,7 @@ export default () => (
     <div style={{ textAlign: 'center' }}>
       <h3>Oops.. Sorry</h3>
       <p>This page is under painting...</p>
-      <p>Please refer to my <a href="https://www.linkedin.com/in/dytra/">LinkedIn Profile</a> instead.</p>
+      <p>Please refer to my <a href="https://www.linkedin.com/in/dytra/" target="_new">LinkedIn Profile</a> instead.</p>
 
     </div>
   </Layout>
