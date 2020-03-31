@@ -1,0 +1,98 @@
+div#portfolio-container {
+  display: flex;
+  flex-direction: column;
+  div#portfolio-banner {
+    background: #9566b2;
+    padding: 2em 3em;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2em;
+    h2,
+    p {
+      color: white;
+    }
+    h2 {
+      margin-bottom: 1em;
+    }
+  }
+  div#portfolio-main {
+    display: flex;
+    // justify-content: space-between;
+    section#portfolio-sidebar {
+      margin-right: 2em;
+      flex: 1;
+      .portfolio-sidebar--section {
+        margin-bottom: 2em;
+        span {
+          font-size: 0.95rem;
+          font-weight: normal;
+          margin-bottom: 1.5em;
+          display: inline-block;
+        }
+        ul {
+          list-style: none;
+          li {
+            border-radius: 5px;
+            margin-bottom: 0.5em;
+            &.active {
+              background: #f6e6ff;
+              a {
+                color: #6d2e95;
+                font-weight: 600;
+              }
+            }
+            a {
+              text-decoration: none;
+
+              display: block;
+              padding: 0.5em 3.5em 0.5em 1.5em;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    section#portfolio-content {
+      flex: 5;
+      div#portofolio-content--header {
+        display: flex;
+        margin-bottom: 1em;
+        div#portfolio-sort {
+          margin-left: auto;
+        }
+
+        div#portfolio-sort {
+          display: flex;
+          align-items: center;
+        }
+      }
+      div#portfolio-content--body {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(auto-fill, minmax(222px, auto));
+      }
+      // display:none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  div#portfolio-main {
+    flex-direction: column;
+    section#portfolio-sidebar {
+      margin-right:0 !important;
+      div.portfolio-sidebar--section {
+        ul {
+          li {
+            a {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

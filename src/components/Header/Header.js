@@ -24,7 +24,7 @@ const Header = ({ siteTitle }) => {
         <ListLink to="/">Home</ListLink>
         <ListLink to="/about/">About</ListLink>
         <ListLink to="/contact/">Contact</ListLink>
-        <ListLink to="/portofolio">Portofolio</ListLink>
+        <ListLink to="/portfolio">Portofolio</ListLink>
       </ul>
   <a id="burger-button" onClick={toggleMenu}>{showMenu ? <FaTimes/> : <FaBars />}</a>
 

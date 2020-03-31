@@ -26,6 +26,25 @@
   box-sizing: border-box;
 }
 
+.card {
+  box-shadow: 0px 11px 25px #0000000B;
+  .card-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height:9em;
+    background-size: cover;
+  }
+  .card-body {
+    padding:1em;
+    
+  }
+
+  .card-title {
+    font-weight: 600;
+    margin-bottom: .5em;
+  }
+}
+
 @media only screen and (max-width:576px) {
   .container {
     padding-left:.5em;
