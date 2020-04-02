@@ -1,11 +1,14 @@
 import React from "react";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ProjectCard from "../components/ProjectCard";
 import { FaChevronDown } from 'react-icons/fa';
 import "../styles/portfolio.scss";
 import "../styles/components.scss";
+import "../styles/utils.scss";
+import projects from "../json/projects.json";
 
-import constructionImage from "../images/in-construction.svg";
+
 export default () => (
   <Layout>
     <SEO title="Portfolio" />
@@ -19,7 +22,7 @@ export default () => (
       <div id="portfolio-main">
         <section id="portfolio-sidebar">
           <div className="portfolio-sidebar--section categories">
-            <span>CATEGORIES</span>
+            <span className="text-label">CATEGORIES</span>
             <ul>
               <li className="active"><a href="#">Professional</a></li>
               <li><a href="#">Personal</a></li>
@@ -43,31 +46,9 @@ export default () => (
             </div>
           </div>
           <div id="portfolio-content--body">
-            <div className="card">
-              <div className="card-image" style={{ backgroundImage: "url(https://secure-images.bridestory.com/image/upload/v1458716392/banner/opengraph/tagline.png)" }}></div>
-              <div className="card-body">
-                <div className="card-title">bridestory</div>
-                <div className="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, eum?</div>
-               </div>
-            </div>
-
-            <div className="card">
-              <div className="card-image" style={{ backgroundImage: "url(https://secure-images.bridestory.com/image/upload/v1458716392/banner/opengraph/tagline.png)" }}></div>
+            { projects.items.map(project => <ProjectCard {...project} />) }
 
 
-              <div className="card-body">
-                <div className="card-title">bridestory</div>
-                <div className="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, eum?</div>
-               </div>
-            </div>
-
-            <div className="card">
-              <div className="card-image" style={{ backgroundImage: "url(https://secure-images.bridestory.com/image/upload/v1458716392/banner/opengraph/tagline.png)" }}></div>
-              <div className="card-body">
-                <div className="card-title">bridestory</div>
-                <div className="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, eum?</div>
-               </div>
-            </div>
           </div>
         </section>
       </div>

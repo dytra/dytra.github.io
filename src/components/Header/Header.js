@@ -18,13 +18,13 @@ const Header = ({ siteTitle }) => {
   return (<header>
     <div id="header-container" className="container">
       <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-        <h3 style={{ display: `inline` }}>dytra</h3>
+        <h3 style={{ display: `inline` }}>&lt;dytra/&gt;</h3>
       </Link>
       <ul className={showMenu ? "force-show" : ""}>
         <ListLink to="/">Home</ListLink>
+        <ListLink to="/portfolio">Portofolio</ListLink>
         <ListLink to="/about/">About</ListLink>
         <ListLink to="/contact/">Contact</ListLink>
-        <ListLink to="/portfolio">Portofolio</ListLink>
       </ul>
   <a id="burger-button" onClick={toggleMenu}>{showMenu ? <FaTimes/> : <FaBars />}</a>
 
