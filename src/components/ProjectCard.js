@@ -2,6 +2,7 @@ import React from "react";
 
 const ProjectCard = ({ name, description }) => {
   return (
+    <a href="#" style={{textDecoration:"none"}}>
     <div className="card">
       <div className="card-image" style={{ backgroundImage: "url(https://secure-images.bridestory.com/image/upload/v1458716392/banner/opengraph/tagline.png)" }}></div>
       <div className="card-body">
@@ -9,7 +10,7 @@ const ProjectCard = ({ name, description }) => {
         <div className="card-content">{description}</div>
       </div>
     </div>
-
+    </a>
   )
 }
 
