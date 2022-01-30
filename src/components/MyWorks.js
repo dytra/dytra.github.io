@@ -34,13 +34,13 @@ const MyWorks = () => {
                     paddingLeft:"1em",
                     // paddingTop:"1em",
                 }}>
-                    <h3>perona.id</h3>
+                    <h3 style={{color:"#ac57de"}}>perona.id</h3>
                     <p style={{marginTop:".5em"}}>Perona is a web-app that lets you create an awesome profile that contains your precious links. You can put it in your social media such as Instagram and Twitter.</p>
                     <a href="https://app.perona.id" style={{
                         display:"inline-block",
                         // marginTop:"0em",
                         fontFamily: `"Source Sans Pro", sans-serif`,
-                        fontWeight:600,
+                        // fontWeight:600,
                         color:"#616161",
                         backgroundColor:"#fff",
                         border:"1px solid #e0e0e0",
@@ -48,7 +48,7 @@ const MyWorks = () => {
                         padding:"12px 2.5em",
                         borderRadius:"8px",
                         textDecoration:"none",
-                        fontSize:".85rem",
+                        // fontSize:".85rem",
                     }} target="_new">Peek</a>
                 </div>
             </div>
