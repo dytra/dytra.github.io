@@ -11,7 +11,7 @@ const Hero = () => (
         <p>I'm a Frontend web developer with solid experience in web development and UI design. I like to build web apps by making your UI/UX design to have a life in the real world.</p>
         <div id="hero-callouts">
           <Link to="/contact" className="primary-btn">Get in Touch</Link>
-          <Link to="/portofolio" className="secondary-btn btn">See my works</Link>
+          {/* <Link to="/portfolio" className="secondary-btn btn">See my works</Link> */}
         </div>
       </aside>
       <aside id="hero-image">

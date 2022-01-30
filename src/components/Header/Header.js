@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => {
       </Link>
       <ul className={showMenu ? "force-show" : ""}>
         <ListLink to="/">Home</ListLink>
-        <ListLink to="/portfolio">Portofolio</ListLink>
+        {/* <ListLink to="/portfolio">Portofolio</ListLink> */}
         <ListLink to="/about/">About</ListLink>
         <ListLink to="/contact/">Contact</ListLink>
       </ul>
