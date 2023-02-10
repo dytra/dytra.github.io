@@ -32,12 +32,12 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
-      <main className="container md:max-w-5xl mx-auto">
+      <main className="container md:max-w-5xl mx-auto px-3">
         <nav className="flex pt-3 items-center">
           <div className="logo">
             <span className='font-semibold'>dytrafolio</span>
           </div>
-          <div className="menu-container ml-auto">
+          <div className="menu-container hidden md:block ml-auto">
             <ul className="flex gap-5">
               {menus.map((menu, index) => {
                 return (
@@ -50,21 +50,23 @@ export default function Home() {
         </nav>
 
         <div className="spacer h-10"></div>
-        <div className="hero flex flex-col md:flex-row">
+        <div className="hero flex flex-col md:flex-row md:items-center md:gap-20">
           <div className="left md:w-1/2">
-            <h1 className="text-5xl font-bold">Hi there! 👋</h1>
-            <div className="mt-3">
+            <h1 className="text-5xl text-center md:text-left font-bold">Hi there! 👋</h1>
+            <div className="mt-5">
               <div>
-                <p className="text-gray-400 leading-7">I am a Frontend Web Developer with a passion for creating visually stunning, responsive websites. My expertise includes HTML, CSS, JavaScript, and React. I strive to improve my skills and deliver high-quality, user-friendly websites that meet client and user needs.</p>
+                <p className="text-gray-400 text-center md:text-left leading-7">I am a Frontend Web Developer with a passion for creating visually stunning, responsive websites. My expertise includes HTML, CSS, JavaScript, and React. I strive to improve my skills and deliver high-quality, user-friendly websites that meet client and user needs.</p>
               </div>
-              <div className="mt-3 flex space-x-3">
-                <a href="#" className="inline-block bg-black text-white rounded-md px-6 py-3">Work With Me</a>
-                <a href="#" className="inline-block bg-white text-black border border-black rounded-md px-6 py-3">See My Work</a>
+              <div className="mt-5 flex space-x-3 justify-center md:justify-start">
+                <a href="#" className="inline-block bg-primary  text-white rounded-md border border-black px-6 py-3">Work With Me</a>
+                <a href="#" className="inline-block bg-brightGrey text-primary border border-primary hover:bg-primary hover:text-white rounded-md px-6 py-3">See My Work</a>
               </div>
             </div>
           </div>
-          <div className="right md:w-1/2">
-            <span>test</span>
+          <div className="right hidden md:block md:w-1/2">
+            <div className='w-full py-3'>
+              <img src='images/hero.png' className="w-full" />
+            </div>
           </div>
 
         </div>
