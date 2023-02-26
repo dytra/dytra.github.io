@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -108,7 +109,7 @@ export default function Home() {
         </footer>
 
       </main>
-      <script src="https://kit.fontawesome.com/3d0d822717.js" crossOrigin="anonymous"></script>
+      <Script src="https://kit.fontawesome.com/3d0d822717.js" crossOrigin="anonymous" />
     </>
   )
 }
