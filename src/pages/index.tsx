@@ -21,6 +21,8 @@ export default function Home() {
       classes: "bg-black px-4 py-3 text-white rounded-md"
     }
   ];
+
+  const skills = ["React", "HTML5", "Javascript", "CSS", "Typescript", "Webflow", "NextJS", "NodeJS", "Figma"];
   return (
     <>
       <Head>
@@ -31,7 +33,9 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
       </Head>
+
       <main className="container md:max-w-5xl mx-auto px-3">
         <nav className="flex pt-3 items-center">
           <div className="logo">
@@ -59,7 +63,7 @@ export default function Home() {
               </div>
               <div className="mt-5 flex space-x-3 justify-center md:justify-start">
                 <a href="#" className="inline-block bg-primary  text-white rounded-md border border-black px-6 py-3">Work With Me</a>
-                <a href="#" className="inline-block bg-brightGrey text-primary border border-primary hover:bg-primary hover:text-white rounded-md px-6 py-3">See My Work</a>
+                <a href="#" className="inline-block bg-brightGrey text-primary border border-primary hover:bg-primary hover:text-white rounded-md px-6 py-3 transition-all">See My Work</a>
               </div>
             </div>
           </div>
@@ -70,8 +74,41 @@ export default function Home() {
           </div>
 
         </div>
+        <div className="spacer h-10"></div>
+        <div className='flex flex-col md:flex-row md:gap-20'>
+          <div className='md:w-1/2'>
+            <h2 className="text-4xl">👔 My Career So Far</h2>
+            <div className='mt-5'>
+              <p className='text-gray-400 leading-8 font-normal'>I am proud to have worked for <a href="https://jagain.com" className='font-semibold' target="_new">jagain.com</a> as a Frontend Web and Mobile Developer for the past several years. During my time there, I honed my skills in developing responsive websites and mobile applications that deliver an exceptional user experience. In addition, I also created <a href="https://perona.id" className='font-semibold' target="_new">perona.id</a>, a platform that helps individuals establish their personal brand and create a mini website profile to showcase their work and important links. This project allowed me to tap into my creative side and demonstrate my ability to develop a functional and visually appealing platform. Overall, I am grateful for the opportunities I have had to grow both professionally and personally in my career as a Frontend Web Developer.</p>
+            </div>
+          </div>
+          <div className='md:w-1/2'>
+            <h2 className="text-4xl mt-3 md:mt-0">🛠 My Skills</h2>
+            <div className='flex mt-5 flex-wrap justify-center md:justify-start'>
+              {
+                skills.map(item => {
+                  return (<span key={item} className='border border-gray-500 px-4 py-2 mr-3 mb-3 rounded-lg hover:bg-gray-200 cursor-pointer text-gray-500'>{item}</span>)
+                })
+              }
+            </div>
+          </div>
+        </div>
+        <div className="spacer h-10 md:h-20"></div>
+        <footer className=''>
+          <div className='text-gray-500 flex gap-5 justify-center'>
+            <a href="https://twitter.com/dytra_io" target="_blank"><i className="fa-brands fa-twitter text-3xl"></i></a>
+            <a href="https://github.com/dytra" target="_blank"><i className="fa-brands fa-github text-3xl"></i></a>
+            <a href="https://instagram.com/dytra.io" target="_blank"><i className="fa-brands fa-instagram text-3xl"></i></a>
+          </div>
+          <div className='mt-5 text-sm text-gray-500 cursor-default'>
+            <p className='text-center'>Copyright © 2022 dytra. All rights reserved.</p>
+          </div>
+
+          <div className="spacer h-10"></div>
+        </footer>
 
       </main>
+      <script src="https://kit.fontawesome.com/3d0d822717.js" crossOrigin="anonymous"></script>
     </>
   )
 }
