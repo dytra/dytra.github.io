@@ -102,7 +102,7 @@ export default function Home() {
         <h2 className="text-4xl">🎪 Showcase</h2>
         <div className='flex flex-col md:flex-row md:gap-10 mt-5'>
           <div className='md:w-1/2'>
-            <img src="/images/perona-thumbnail.png" className='rounded-2xl' alt="showcase thumbnail" />
+            <img src="images/perona-thumbnail.png" className='rounded-2xl' alt="showcase thumbnail" />
           </div>
           <div className='md:w-1/2'>
             <h3 className='text-3xl font-bold mt-3 md:mt-0'>Link Sharing App</h3>
@@ -118,7 +118,7 @@ export default function Home() {
           return (
             <div key={index} className='flex flex-col md:flex-row md:gap-10 mt-10'>
               <div className='md:w-1/4'>
-                <img src="/images/perona-thumbnail.png" className='rounded-2xl h-40' alt="blog thumbnail" />
+                <img src="images/perona-thumbnail.png" className='rounded-2xl h-40' alt="blog thumbnail" />
               </div>
               <div className='md:w-3/4'>
                 <h3 className='text-3xl font-bold mt-3 md:mt-0'>Link Sharing App</h3>
