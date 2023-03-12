@@ -107,10 +107,30 @@ export default function Home() {
           <div className='md:w-1/2'>
             <h3 className='text-3xl font-bold mt-3 md:mt-0'>Link Sharing App</h3>
             <p className='mt-3 text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia quos repudiandae. Voluptas necessitatibus harum, accusantium ducimus fugit ipsa optio magnam eos magni aliquam vel, incidunt, quisquam deserunt aspernatur quibusdam reiciendis modi dignissimos distinctio laudantium? Quia rerum dicta id. </p>
-            <Button variant='ghost' className='mt-3'>Read More</Button>
+            <Button variant='ghost' className='mt-3'>Take a Look</Button>
           </div>
         </div>
 
+
+        <div className="spacer h-10"></div>
+        <h2 className="text-4xl">✍️ Blog</h2>
+        {new Array(3).fill({}).map(item => {
+          return (
+            <div className='flex flex-col md:flex-row md:gap-10 mt-10'>
+              <div className='md:w-1/4'>
+                <img src="/images/perona-thumbnail.png" className='rounded-2xl h-40' />
+              </div>
+              <div className='md:w-3/4'>
+                <h3 className='text-3xl font-bold mt-3 md:mt-0'>Link Sharing App</h3>
+                <p className='mt-3 text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia quos repudiandae. Voluptas necessitatibus harum, accusantium ducimus fugit ipsa  </p>
+                <Button variant='ghost' className='mt-3'>Read More</Button>
+              </div>
+            </div>
+
+          )
+        })}
+
+        {/* Footer */}
         <div className="spacer h-10 md:h-20"></div>
         <footer className=''>
           <div className='text-gray-500 flex gap-5 justify-center'>
@@ -118,11 +138,11 @@ export default function Home() {
             <a href="https://github.com/dytra" target="_blank" rel="noreferrer"><i className="fa-brands fa-github text-3xl"></i></a>
             <a href="https://instagram.com/dytra.io" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram text-3xl"></i></a>
           </div>
+
           <div className='mt-5 text-sm text-gray-500 cursor-default'>
             <p className='text-center'>Copyright © 2022 dytra. All rights reserved.</p>
           </div>
 
-          <div className="spacer h-10"></div>
         </footer>
 
       </main>
