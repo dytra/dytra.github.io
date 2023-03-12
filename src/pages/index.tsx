@@ -123,7 +123,7 @@ export default function Home() {
               <div className='md:w-3/4'>
                 <h3 className='text-3xl font-bold mt-3 md:mt-0'>Link Sharing App</h3>
                 <p className='mt-3 text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia quos repudiandae. Voluptas necessitatibus harum, accusantium ducimus fugit ipsa  </p>
-                <Button variant='ghost' className='mt-3'>Read More</Button>
+                <Button variant='ghost' className='mt-3' size='sm'>Read More</Button>
               </div>
             </div>
 
