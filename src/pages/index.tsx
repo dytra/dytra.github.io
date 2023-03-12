@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Script from 'next/script'
+import Button from '@/components/Button'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -63,8 +64,10 @@ export default function Home() {
                 <p className="text-gray-400 text-center md:text-left leading-7">I am a Frontend Web Developer with a passion for creating visually stunning, responsive websites. My expertise includes HTML, CSS, JavaScript, and React. I strive to improve my skills and deliver high-quality, user-friendly websites that meet client and user needs.</p>
               </div>
               <div className="mt-5 flex space-x-3 justify-center md:justify-start">
-                <a href="#" className="inline-block bg-primary  text-white rounded-md border border-black px-6 py-3">Work With Me</a>
-                <a href="#" className="inline-block bg-brightGrey text-primary border border-primary hover:bg-primary hover:text-white rounded-md px-6 py-3 transition-all">See My Work</a>
+                {/* <a href="#" className="inline-block bg-primary  text-white rounded-md border border-black px-6 py-3">Work With Me</a> */}
+                <Button>Work With Me</Button>
+                {/* <a href="#" className="inline-block bg-brightGrey text-primary border border-primary hover:bg-primary hover:text-white rounded-md px-6 py-3 transition-all">See My Work</a> */}
+                <Button variant='ghost'>See My Work</Button>
               </div>
             </div>
           </div>
@@ -94,6 +97,20 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <div className="spacer h-10 md:h-20"></div>
+        <h2 className="text-4xl">🎪 Showcase</h2>
+        <div className='flex flex-col md:flex-row md:gap-10 mt-5'>
+          <div className='md:w-1/2'>
+            <img src="/images/perona-thumbnail.png" className='rounded-2xl' />
+          </div>
+          <div className='md:w-1/2'>
+            <h3 className='text-3xl font-bold mt-3 md:mt-0'>Link Sharing App</h3>
+            <p className='mt-3 text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia quos repudiandae. Voluptas necessitatibus harum, accusantium ducimus fugit ipsa optio magnam eos magni aliquam vel, incidunt, quisquam deserunt aspernatur quibusdam reiciendis modi dignissimos distinctio laudantium? Quia rerum dicta id. </p>
+            <Button variant='ghost' className='mt-3'>Read More</Button>
+          </div>
+        </div>
+
         <div className="spacer h-10 md:h-20"></div>
         <footer className=''>
           <div className='text-gray-500 flex gap-5 justify-center'>
