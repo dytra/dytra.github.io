@@ -114,9 +114,9 @@ export default function Home() {
 
         <div className="spacer h-10"></div>
         <h2 className="text-4xl">✍️ Blog</h2>
-        {new Array(3).fill({}).map(item => {
+        {new Array(3).fill({}).map((item, index) => {
           return (
-            <div className='flex flex-col md:flex-row md:gap-10 mt-10'>
+            <div key={index} className='flex flex-col md:flex-row md:gap-10 mt-10'>
               <div className='md:w-1/4'>
                 <img src="/images/perona-thumbnail.png" className='rounded-2xl h-40' alt="blog thumbnail" />
               </div>
