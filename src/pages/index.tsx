@@ -144,7 +144,7 @@ export default function Home() {
           </div>
 
         </footer>
-
+        <div className="spacer h-10 md:h-10"></div>
       </main>
       <Script src="https://kit.fontawesome.com/3d0d822717.js" crossOrigin="anonymous" />
     </>
