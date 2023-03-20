@@ -17,7 +17,7 @@ const Button: React.FC<ButtonInterface> = ({
     <button className={classNames(
       {
         "bg-primary text-white": (variant == "primary" || !variant),
-        "bg-brightGrey hover:bg-primary hover:text-white": variant == "ghost",
+        "bg-brightGrey hover:bg-gray-200": variant == "ghost",
         "text-sm": size=="sm"
       },
       "inline-block  rounded-md border border-black px-6 py-3 transition-all",
