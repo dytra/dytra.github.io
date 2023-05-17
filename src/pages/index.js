@@ -8,7 +8,7 @@ import MyWorks from "../components/MyWorks";
 
 const IndexPage = () => {
   useEffect(() => {
-    document.location.href="https://dytra.github.io/v3/"
+    document.location.href="https://dytra.github.io/dytra.github.iov3/"
   },[]);
   return (
     <Layout>
