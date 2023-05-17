@@ -31,11 +31,11 @@ export default function Home() {
       <HeadMeta />
 
       <main className="container md:max-w-5xl mx-auto px-3">
-        <nav className="flex pt-3 items-center">
-          <div className="logo">
-            <span className='font-semibold'>dytrafolio</span>
+        <nav className="flex pt-3 items-center justify-center">
+          <div className="logo ">
+            <a href="/" className='font-semibold'>dytrafolio</a>
           </div>
-          <div className="menu-container hidden md:block ml-auto">
+          {/* <div className="menu-container hidden md:block ml-auto">
             <ul className="flex gap-5">
               {menus.map((menu, index) => {
                 return (
@@ -44,7 +44,7 @@ export default function Home() {
                 )
               })}
             </ul>
-          </div>
+          </div> */}
         </nav>
 
         <div className="spacer h-10"></div>
