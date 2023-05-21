@@ -165,7 +165,7 @@ const showcases: showcase[] = [
   },
   {
     title: "socialbiogen.com",
-    description: "The AI-powered web app that generates captivating social media bios in seconds. Simply provide a few details about yourself, and let BioGenius create unique and attention-grabbing bios tailored to your chosen moods/personality. Stand out from the crowd and make a lasting impression with BioGenius.",
+    description: "The AI-powered web app that generates captivating social media bios in seconds. Simply provide a few details about yourself, and let socialbiogen create unique and attention-grabbing bios tailored to your chosen moods/personality. Stand out from the crowd and make a lasting impression with socialbiogen.",
     thumbnailUrl: "images/socialbiogen.png",
     url: "https://socialbiogen.com",
   },
