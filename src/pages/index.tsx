@@ -170,6 +170,12 @@ const showcases: showcase[] = [
     url: "https://socialbiogen.com",
   },
   {
+    title:"kalkulatorinvestasi.com",
+    description:"All in One web app to help people reach their financial freedom. This app provides some tool such as compounding interest calculator and trading tools such us forex rates, and pip calculator",
+    thumbnailUrl:"images/kalkulatorinvest-thumbnail.png",
+    url:"https://kalkulatorinvestasi.com"
+  },
+  {
     title: "beautybyke.com",
     description: "This project involved a comprehensive redesign and rework of a salon hair product website using the Shopify platform. Utilizing  expertise in web development, and Liquid templating language to successfully transform the website, enhancing the user experience and aligning the design with the client's brand. ",
     thumbnailUrl: "images/beautybyke.jpg",
