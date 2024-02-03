@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useLayoutEffect } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -7,7 +7,7 @@ import Hero from "../components/Hero/Hero";
 import MyWorks from "../components/MyWorks";
 
 const IndexPage = () => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     document.location.href="https://dytra.github.io/v3"
   },[]);
   return (
