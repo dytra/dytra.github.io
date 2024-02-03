@@ -12,9 +12,9 @@ const IndexPage = () => {
   },[]);
   return (
     <Layout>
-      <SEO title="Home" />
+      {/* <SEO title="Home" />
       <Hero />
-      <MyWorks />
+      <MyWorks /> */}
 
     </Layout>
   )
