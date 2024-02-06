@@ -26,7 +26,7 @@ export default function Home() {
     }
   ];
 
-  const skills = ["React", "HTML5", "Javascript", "CSS", "Typescript", "Webflow", "NextJS", "Tailwind", "Figma", "Webflow", "Shopify"];
+  const skills = ["React", "HTML5", "Javascript", "CSS", "Typescript", "Webflow", "NextJS", "Tailwind", "Figma","WordPress", "Webflow", "Shopify"];
   return (
     <>
       <HeadMeta />
