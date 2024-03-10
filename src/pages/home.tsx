@@ -11,8 +11,9 @@ const Home:React.FC = () => {
         <Button variant="ghost"><a href="mailto:dytra.io@icloud.com">Connect</a></Button>
         <Button variant="link">See My Work</Button>
       </div>
-      <footer className="flex justify-center">
+      <footer className="flex justify-center gap-3">
         <a href="https://github.com/dytra" target="_blank" rel="noreferrer"><i className="fa-brands fa-github text-2xl"></i></a>
+        <a href="mailto:dytra.io@icloud.com" target="_blank" rel="noreferrer"><i className="fa-solid fa-envelope text-2xl"></i></a>
       </footer>
     </DarkTemplate>
   )
