@@ -6,10 +6,11 @@ import Script from 'next/script'
 import Button from '@/components/Button'
 import HeadMeta from '@/components/HeadMeta'
 import Link from 'next/link'
+import Home from './home'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Index() {
   const menus = [
     {
       label: "HOME"
@@ -27,6 +28,7 @@ export default function Home() {
   ];
 
   const skills = ["React", "HTML5", "Javascript", "CSS", "Typescript", "Webflow", "NextJS", "Tailwind", "Figma","WordPress", "Webflow", "Shopify"];
+  return <Home/>
   return (
     <>
       <HeadMeta />
