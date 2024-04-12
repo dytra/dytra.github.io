@@ -14,7 +14,7 @@ const DarkTemplate:React.FC<DarkTemplateProps> = ({
     <Head>
       <title>dytra.io</title>
     </Head>
-    <div className="bg-black h-screen text-white flex justify-center px-3 md:px-0">
+    <div className="bg-black h-screen text-white flex justify-center md:px-0">
       <DotBackgroundDemo>
       <div className="container md:w-2/5 ">
       {children}
