@@ -2,7 +2,7 @@ import Button from "@/components/Button";
 import MainBody from "@/components/MainBody";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import DarkTemplate from "@/templates/DarkTemplate";
-import React from "react";
+import React, { CSSProperties } from "react";
 
 const Home:React.FC = () => {
   return(
@@ -48,31 +48,76 @@ item
 }:{item:any}) => {
   const { className, style,} = item;
   return(
-  <div className={`h-44 rounded-md border-solid border-white ${className}`} style={{
-    borderWidth:1,
+  <div className={`h-44 rounded-md border-solid hover:border transition-all border-white overflow-hidden ${className}`} style={{
+    // borderWidth:1,
     ...style
   }}
   >
-
+    <a href={item?.externalLink ?? "#"} 
+    target="_blank"
+    rel="noreferrer"
+    className="block relative w-full h-full bg-black opacity-0 hover:opacity-100 transition-all p-3">
+      <h3 className="text-lg font-bold inline break-words">{item?.title}</h3>
+      <div className="h-3"><span></span></div>
+      <p className="leading-tight" style={{
+        fontSize:".85rem"
+      }}>{item?.description}</p>
+      <span className="flex absolute justify-center items-center bg-white w-6 h-6 rounded-full right-0 bottom-5 mr-5">
+        <i className="fas fa-chevron-right text-sm text-black"></i>
+      </span>
+    </a>
+  {/* <img src="images/perona-icon.png" className='w-full h-full' alt="showcase thumbnail" /> */}
   </div>
   )
 }
-
-const items = [
+type GridItem = {
+  title:string
+  description?:string
+  externalLink?:string
+  className?:string
+  style?:CSSProperties
+}
+const items:GridItem[] = [
+ 
   {
-    title:"Blog",
+    title:"perona.id",
+    description:"Social bio link generator that does something cool under the hood.",
+    externalLink:"https://perona.id",
     className:"",
     style:{
-      // gridColumn: "span 2"
+      background:"url('images/perona-icon.png')",
+      backgroundPosition:"center",
+      backgroundRepeat:"no-repeat",
+      backgroundSize:"cover"
+      // backgroundSize:"100%"
+
     }
   },
   {
-    title:"perona.id",
-    className:""
-  },
-  {
     title:"kalkulatorinvestasi.com",
-    className:""
+    description:"Tools for investor and trader to get the edge of the market",
+    externalLink:"https://kalkulatorinvestasi.com",
+    className:"",
+    style:{
+      background:"url('https://kalkulatorinvestasi.com/logo.png')",
+      backgroundPosition:"center",
+      backgroundRepeat:"no-repeat",
+      backgroundSize:"contain"
+    }
+  },
+   {
+    title:"socialbiogen.com",
+    description:"Generates attractive bio for your social links",
+    externalLink:"https://socialbiogen.com",
+    className:"",
+      style:{
+      background:"url('images/socialbio-icon.png')",
+      backgroundPosition:"center",
+      backgroundRepeat:"no-repeat",
+      backgroundSize:"cover"
+      // backgroundSize:"100%"
+
+    }
   },
 ]
 
