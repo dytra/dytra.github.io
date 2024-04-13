@@ -13,12 +13,16 @@ const Home:React.FC = () => {
         <Button variant="ghost"><a href="mailto:dytra.io@icloud.com">Connect</a></Button>
         <Button variant="link"><a href="https://github.com/dytra">See My Work</a></Button>
       </div>
+    
+      <div className="h-5"><span></span></div>
+      <div className="px-3 md:px-0">
+        <BentoGrid/>
+      </div>
+      <div className="h-10"><span></span></div>
       <footer className="flex justify-center gap-3">
         <a href="https://github.com/dytra" target="_blank" rel="noreferrer"><i className="fa-brands fa-github text-2xl"></i></a>
         <a href="mailto:dytra.io@icloud.com" target="_blank" rel="noreferrer"><i className="fa-solid fa-envelope text-2xl"></i></a>
       </footer>
-      <div className="h-3"><span></span></div>
-      <BentoGrid/>
       <div 
       // className="relative w-ful h-full"
       className="absolute w-full h-full z-10 top-0 left-0 pointer-events-none"
@@ -31,7 +35,7 @@ const Home:React.FC = () => {
 
 const BentoGrid = () => {
   return(
-    <div className="grid grid-cols-3 gap-3 
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 
     rounded-md overflow-hidden">
       {items.map((item,index) => {
         return <BentoGridItem 
