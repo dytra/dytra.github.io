@@ -21,8 +21,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+      border: "hsl(var(--border))",
       brightGrey:"#EDEFF1",
       primary:"#121317",
+      background: "hsl(var(--background))",
       }
     },
   },
