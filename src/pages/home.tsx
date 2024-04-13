@@ -17,7 +17,8 @@ const Home:React.FC = () => {
         <a href="https://github.com/dytra" target="_blank" rel="noreferrer"><i className="fa-brands fa-github text-2xl"></i></a>
         <a href="mailto:dytra.io@icloud.com" target="_blank" rel="noreferrer"><i className="fa-solid fa-envelope text-2xl"></i></a>
       </footer>
-
+      <div className="h-3"><span></span></div>
+      <BentoGrid/>
       <div 
       // className="relative w-ful h-full"
       className="absolute w-full h-full z-10 top-0 left-0 pointer-events-none"
@@ -27,6 +28,53 @@ const Home:React.FC = () => {
     </DarkTemplate>
   )
 }
+
+const BentoGrid = () => {
+  return(
+    <div className="grid grid-cols-3 gap-3 
+    rounded-md overflow-hidden">
+      {items.map((item,index) => {
+        return <BentoGridItem 
+        key={index} 
+        item={item}
+        />
+      })}
+    </div>
+  )
+}
+
+const BentoGridItem = ({
+item
+}:{item:any}) => {
+  const { className, style,} = item;
+  return(
+  <div className={`h-44 rounded-md border-solid border-white ${className}`} style={{
+    borderWidth:1,
+    ...style
+  }}
+  >
+
+  </div>
+  )
+}
+
+const items = [
+  {
+    title:"Blog",
+    className:"",
+    style:{
+      // gridColumn: "span 2"
+    }
+  },
+  {
+    title:"perona.id",
+    className:""
+  },
+  {
+    title:"kalkulatorinvestasi.com",
+    className:""
+  },
+]
 
 
 export default Home;
