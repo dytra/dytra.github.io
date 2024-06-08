@@ -2,6 +2,7 @@
 const isGithubActions = process.env.GITHUB_ACTIONS || false
 const nextConfig = {
   reactStrictMode: true,
+  output: "export",  // <=== enables static exports
 }
 let assetPrefix = ''
 let basePath = undefined
