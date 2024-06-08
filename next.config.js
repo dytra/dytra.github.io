@@ -18,5 +18,4 @@ module.exports = {
   nextConfig,
   assetPrefix: assetPrefix,
   basePath: basePath,
-  output: 'standalone'
 }
