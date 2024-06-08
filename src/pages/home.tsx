@@ -3,7 +3,7 @@ import MainBody from "@/components/MainBody";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import DarkTemplate from "@/templates/DarkTemplate";
 import React, { CSSProperties } from "react";
-
+// test
 const Home:React.FC = () => {
   return(
     <DarkTemplate>
