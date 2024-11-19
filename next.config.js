@@ -1,26 +1,22 @@
 /** @type {import('next').NextConfig} */
-const isGithubActions = process.env.GITHUB_ACTIONS || false
-const nextConfig = {
-  reactStrictMode: true,
-  output: "export",  // <=== enables static exports
-  trailingSlash: true
-}
-let assetPrefix = ''
-let basePath = undefined
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+
+let assetPrefix = '';
+let basePath = '';
 
 if (isGithubActions) {
-  // trim off `<owner>/`
-  // const repo = ""
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
-
-  assetPrefix = `/${repo}/`
-  basePath = `/${repo}`
-  // assetPrefix = `/${repo}/`
-  // basePath = `/${repo}`
+  // Extract the repo name from the GitHub repository slug
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '');
+  assetPrefix = `/${repo}/`;
+  basePath = `/${repo}`;
 }
 
-module.exports = {
-  nextConfig,
-  assetPrefix: assetPrefix,
-  basePath: basePath,
-}
+const nextConfig = {
+  reactStrictMode: true,
+  output: 'export', // Enables static exports
+  trailingSlash: true, // Ensures trailing slashes for all paths
+  assetPrefix: assetPrefix, // Prefix for static assets
+  basePath: basePath, // Base path for the app
+};
+
+module.exports = nextConfig;
