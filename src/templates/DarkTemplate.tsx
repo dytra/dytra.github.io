@@ -16,7 +16,7 @@ const DarkTemplate:React.FC<DarkTemplateProps> = ({
     </Head>
     <div className="bg-black h-screen text-white flex justify-center md:px-0">
       <DotBackgroundDemo>
-      <div className="container md:w-2/5 ">
+      <div className="container px-5 lg:px-0 md:w-2/5 ">
       {children}
       </div>
             <Script src="https://kit.fontawesome.com/3d0d822717.js" crossOrigin="anonymous" />

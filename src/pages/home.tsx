@@ -7,10 +7,10 @@ import React, { CSSProperties } from "react";
 const Home:React.FC = () => {
   return(
     <DarkTemplate>
-      <h1 className="text-5xl font-bold   text-center mb-3"><span className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">Hi there!</span> <span>👋</span></h1>
-      <p className="text-center mb-3">I am a Frontend Web Developer with a passion for crafting visually stunning apps on the web</p><div className="container flex justify-center gap-3 mb-3">
+    <h1 className="text-5xl font-bold   text-center mb-3"><span className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">Hi there!</span> <span>👋</span></h1>
+      <p className="text-center mb-7">I am a Frontend Web Developer with a passion for crafting visually stunning apps on the web!</p><div className="container flex justify-center gap-3 mb-3">
         <Button variant="ghost"><a href="mailto:dytra.io@icloud.com">Connect</a></Button>
-        <Button variant="link"><a href="https://github.com/dytra">See My Work</a></Button>
+        {/* <Button variant="link"><a href="https://github.com/dytra">See My Work</a></Button> */}
       </div>
     
       <div className="h-5"><span></span></div>
@@ -81,7 +81,20 @@ type GridItem = {
   style?:CSSProperties
 }
 const items:GridItem[] = [
- 
+   {
+    title:"jsonkeep",
+    description:"Manage your JSON files in a secure and organized manner. ",
+    externalLink:"https://jsonkeep.com",
+    className:"",
+    style:{
+      background:"url('images/jsonkeep-icon.png')",
+      backgroundPosition:"center",
+      backgroundRepeat:"no-repeat",
+      backgroundSize:"contain",
+      // backgroundSize:"100%"
+
+    }
+  },
   {
     title:"perona.id",
     description:"Social bio link generator that does something cool under the hood.",
@@ -91,8 +104,7 @@ const items:GridItem[] = [
       background:"url('images/perona-icon.png')",
       backgroundPosition:"center",
       backgroundRepeat:"no-repeat",
-      backgroundSize:"cover"
-      // backgroundSize:"100%"
+      backgroundSize:"contain"
 
     }
   },

@@ -160,6 +160,12 @@ type showcase = {
 }
 const showcases: showcase[] = [
   {
+    title:"jsonkeep",
+    description:"jsonkeep is a web application that allows you to store and manage your JSON data in a secure and organized manner. With jsonkeep, you can easily create, edit, and delete JSON files, as well as import and export data from other sources. Whether you're a developer, designer, or just someone who needs to manage their JSON data, jsonkeep is the perfect tool for you.",
+    thumbnailUrl:"images/jsonkeep-thumbnail.png",
+    url:"https://jsonkeep.com"
+  },
+  {
     title: "perona.id",
     description: "perona.id is a user-friendly web application designed to help you create personalized mini website profiles with ease. With perona.id, you can showcase your precious links, widgets, and other content in a visually appealing and engaging way, perfect for sharing on your favorite social media platforms.",
     thumbnailUrl: "images/perona-thumbnail.png",
@@ -177,10 +183,10 @@ const showcases: showcase[] = [
     thumbnailUrl:"images/kalkulatorinvest-thumbnail.png",
     url:"https://kalkulatorinvestasi.com"
   },
-  {
-    title: "beautybyke.com",
-    description: "This project involved a comprehensive redesign and rework of a salon hair product website using the Shopify platform. Utilizing  expertise in web development, and Liquid templating language to successfully transform the website, enhancing the user experience and aligning the design with the client's brand. ",
-    thumbnailUrl: "images/beautybyke.jpg",
-    url: "https://beautybyke.com"
-  },
+  // {
+  //   title: "beautybyke.com",
+  //   description: "This project involved a comprehensive redesign and rework of a salon hair product website using the Shopify platform. Utilizing  expertise in web development, and Liquid templating language to successfully transform the website, enhancing the user experience and aligning the design with the client's brand. ",
+  //   thumbnailUrl: "images/beautybyke.jpg",
+  //   url: "https://beautybyke.com"
+  // },
 ];
