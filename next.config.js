@@ -10,10 +10,11 @@ let basePath = undefined
 
 if (isGithubActions) {
   // trim off `<owner>/`
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+  const repo = ""
+  // const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
 
-  assetPrefix = `/`
-  basePath = `/`
+  assetPrefix = `/${repo}/`
+  basePath = `/${repo}`
   // assetPrefix = `/${repo}/`
   // basePath = `/${repo}`
 }
